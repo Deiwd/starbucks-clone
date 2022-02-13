@@ -1,0 +1,252 @@
+@charset "UTF-8";
+ 
+/* -------------------- [---- DEIWD ---- ] -------------------- */
+/* ---------------- (https://github.com/deiwd) ---------------- */
+
+@media only screen and (max-width: 1190px)
+{
+    .container
+    {
+        max-width: 900px;
+    }
+
+    /* --------- [FIVE-SECTION] --------- */
+    /* ---------------------------------- */
+    .five-section .box-grid--one
+    {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 980px)
+{
+    .one-section,
+    .two-section *,
+    .three-section *,
+    .four-section,
+    .four-section *,
+    .five-section *,
+    .six-section,
+    .footer-content *
+    {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .two-section .box-grid--two,
+    .four-section .box-grid--two,
+    .five-section .box-grid--two
+    {
+        height: 400px;
+    }
+
+    .container
+    {
+        max-width: 760px;
+    }
+
+    .widget .title::before
+    {
+        height: 10px;
+    }
+
+    .two-section, .three-section, .four-section, .five-section .container
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    /* --------- [TWO-SECTION] --------- */
+    /* ---------------------------------- */
+    .two-section .box-grid--two
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .two-section .box-grid--one
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .two-section .box-grid--three
+    {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    /* --------- [FIVE-SECTION] --------- */
+    /* ---------------------------------- */
+    .five-section .box-grid--one
+    {
+        place-items: center;
+    }
+    .five-section .box-grid--two
+    {
+        grid-column: 1 / 2;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    body
+    {
+        font-size: 2.8vw;
+    }
+
+    .container
+    {
+        max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* --------- [FOUR-SECTION] --------- */
+    /* ---------------------------------- */
+    .four-section .box-grid--one
+    {
+        padding: 100px 0;
+    }
+
+    /* --------- [FOOTER] --------- */
+    /* ---------------------------- */
+    .footer-content
+    {
+        grid-template-columns: 1fr;
+    }
+    .footer-content .widget
+    {
+        margin: 20px 0;
+    }
+    .footer-content .box-grid--two
+    {
+        height: 200px;
+        grid-column: 1 / 2;
+    }
+    .footer-content .box-grid--three
+    {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 540px)
+{
+    .two-section .box-grid--two,
+    .two-section .box-grid--three,
+    .three-section .box-grid--three,
+    .four-section .box-grid--two,
+    .five-section .box-grid--two,
+    .footer-content .box-grid--two
+    {
+        height: 200px;
+    }
+
+    .widget
+    {
+        width: auto !important;
+        margin: 0 10px;
+    }
+    .widget .title::before
+    {
+        width: 12vw;
+        height: 1.5vw;
+    }
+
+    /* --------- [MENU] --------- */
+    /* -------------------------- */
+    .menu-content .container
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .area--hr form
+    {
+        border: 0;
+    }
+    .area--hr input
+    {
+        display: none;
+    }
+
+    /* --------- [ONE-SECTION] --------- */
+    /* ---------------------------------- */
+    .one-section .container
+    {
+        text-align: center;
+    }
+    .one-section .emphasis
+    {
+        margin: 0 1em;
+        border-width: .5em;
+    }
+    .one-section .emphasis
+    {
+        margin-top: 40px;
+    }
+
+    /* --------- [FOOTER] --------- */
+    /* ---------------------------- */
+    .footer-content .box-grid--one
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .footer-content .box-grid--two
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px)
+{
+    .two-section .box-grid--two,
+    .two-section .box-grid--three,
+    .three-section .box-grid--three,
+    .four-section .box-grid--two,
+    .five-section .box-grid--two,
+    .footer-content .box-grid--two
+    {
+        height: 120px;
+    }
+
+    .widget .title
+    {
+        font-size: 2.4em;
+    }
+    .widget .subtitle
+    {
+        font-size: 1.2em;
+    }
+    .widget .description
+    {
+        font-size: 1.4em;
+    }
+    .widget .link
+    {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    /* --------- [MENU] --------- */
+    /* -------------------------- */
+    .menu-content .container
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* --------- [ONE-SECTION] --------- */
+    /* ---------------------------------- */
+    .one-section .container
+    {
+        padding: 10px 0;
+    }
+
+    /* --------- [FOOTER] --------- */
+    /* ---------------------------- */
+    .footer-content ul
+    {
+        font-size: 1.4em;
+    }
+}
